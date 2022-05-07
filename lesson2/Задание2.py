@@ -1,6 +1,6 @@
 # не сообразила, как заполнить список через input
 
-new_list = [1, 2, 3, 4, 5, "ghj"]
+new_list = [1, 2, 3, 4, 5]
 
 print(len(new_list))
 
