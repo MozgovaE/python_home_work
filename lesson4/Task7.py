@@ -8,16 +8,11 @@ from itertools import count
 from math import factorial
 
 
-def fact():
-    for el in fact():
-        yield factorial(el)
-
-gen = fact()
-x = 0
-for i in gen:
-    if x < 15:
-        print(i)
-        x += 1
-    else:
-        break
+def fact(n):
+    result = 1
+    for a in range(1, n + 1):
+        result *= a
+        yield result
+for el in fact(10):
+    print(el)
 
